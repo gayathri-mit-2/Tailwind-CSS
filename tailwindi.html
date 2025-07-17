@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gayathri.P Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white font-sans text-slate-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 z-50 w-full bg-teal-600 p-4 text-white shadow-lg">
+      <ul class="flex justify-center space-x-8 text-lg">
+        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+        <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 pt-24 text-center">
+      <!-- G avatar circle -->
+      <div class="mb-4 flex h-36 w-36 items-center justify-center rounded-full bg-teal-600 text-5xl font-bold text-white shadow-md">
+        G
+      </div>
+      <h1 class="text-4xl font-bold text-teal-700">I'm Gayathri.P</h1>
+      <p class="mt-2 text-slate-600 italic">Web Developer | UI Enthusiast</p>
+      <a href="#" class="mt-4 rounded-full bg-teal-600 px-6 py-2 text-white transition hover:bg-teal-800">Download Resume</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-slate-50 px-6 py-16 md:px-20">
+      <h2 class="mb-6 text-center text-3xl font-bold text-teal-700">About Me</h2>
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="mb-4">I'm a 2nd-year B.Tech IT student at Anna University. I enjoy building beautiful, responsive websites using Tailwind CSS and HTML. I love designing and developing web applications that are both functional and elegant.</p>
+        <h3 class="mt-6 text-xl font-semibold text-slate-700">Skills</h3>
+        <ul class="mt-2 flex justify-center space-x-4 font-medium text-teal-700">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Tailwind CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white px-6 py-16 md:px-20">
+      <h2 class="mb-10 text-center text-3xl font-bold text-teal-700">Projects</h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <!-- Project 1 -->
+        <div class="rounded-lg bg-blue-50 p-4 shadow transition hover:scale-105 hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x180" alt="Food Delivery Project" class="mb-3 rounded" />
+          <h3 class="text-lg font-semibold text-teal-700">Food Delivery Page</h3>
+          <p class="mb-2 text-sm text-slate-700">A simple landing page UI for a food delivery service using Tailwind.</p>
+          <a href="#" target="_blank" class="text-blue-600 underline">View GitHub</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="rounded-lg bg-blue-50 p-4 shadow transition hover:scale-105 hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x180" alt="Portfolio Template" class="mb-3 rounded" />
+          <h3 class="text-lg font-semibold text-teal-700">Portfolio Template</h3>
+          <p class="mb-2 text-sm text-slate-700">A responsive portfolio template using flex and grid layout.</p>
+          <a href="#" target="_blank" class="text-blue-600 underline">View GitHub</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="rounded-lg bg-blue-50 p-4 shadow transition hover:scale-105 hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x180" alt="Weather App UI" class="mb-3 rounded" />
+          <h3 class="text-lg font-semibold text-teal-700">Weather App UI</h3>
+          <p class="mb-2 text-sm text-slate-700">A frontend layout for a weather app built with Tailwind cards.</p>
+          <a href="#" target="_blank" class="text-blue-600 underline">View GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-slate-100 px-6 py-16 md:px-20">
+      <h2 class="mb-6 text-center text-3xl font-bold text-teal-700">Contact Me</h2>
+      <form class="mx-auto max-w-xl space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full rounded border border-slate-300 p-3" aria-label="Name" />
+        <input type="email" placeholder="Your Email" class="w-full rounded border border-slate-300 p-3" aria-label="Email" />
+        <textarea placeholder="Your Message" class="h-32 w-full rounded border border-slate-300 p-3" aria-label="Message"></textarea>
+        <button type="submit" class="rounded bg-teal-600 px-6 py-2 text-white hover:bg-teal-800">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>
